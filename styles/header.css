@@ -1,0 +1,204 @@
+/*  HEADER  */
+
+.header{
+  display: flex;
+  flex-direction: row;
+  height: 75px;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+
+  z-index: 2;
+}
+
+/*  LEFT HEADER  */
+
+.left-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  padding: 10px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+
+.hamburguer-logo{
+  height: 40px;
+  margin-left: 20px;
+}
+
+.youtube-logo{
+  height: 40px;
+  margin-right: 20px;
+}
+
+/*  CENTER HEADER  */
+
+input{
+  outline: none;
+  display: block;
+  padding: 0px 12px;
+  height: 35px;
+  flex: 1;
+  font-size: 16px;
+  border: 1px solid rgb(221, 221, 221);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.3);
+  width: 0;
+
+}
+
+.center-header{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 40px;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+
+
+}
+
+
+
+.button-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(221, 221, 221);
+  border-left: none;
+  height: 37px;
+  width: 70px;
+  cursor: pointer;
+}
+
+.img-search{
+  height: 20px;
+  color: gray;
+}
+
+.button-voice-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 38px;
+  border: none;
+  padding: 4px;
+  border-radius: 19px;
+  margin-left: 20px;
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+
+.img-voice-search{
+  height: 25px;
+}
+
+.button-search:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+.button-voice-search:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+
+/*  RIGHT HEADER  */
+
+
+.right-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  padding: 5px 20px;
+  flex-shrink: 0;
+}
+
+.img-profile-picture{
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+
+.button-create, .button-youtube-apps, .button-notifications{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
+
+.button-create:hover, .button-youtube-apps:hover, .button-notifications:hover{
+  background-color: rgb(226, 226, 226);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button-notifications{
+  position: relative;
+}
+
+.notifications-count{
+  position: absolute;
+  font-size: 10px;
+  color: white;
+  background-color: red;
+  border: 1px solid white;
+  border-radius: 7px;
+  width: 12px;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 6px;
+  right: 6px;
+}
+
+.button-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tooltip-container{
+  position: absolute;
+  bottom: -35px;
+  color: white;
+  background-color: rgb(102, 102, 102);
+  padding: 5px 8px;
+  opacity: 0;
+  text-wrap: nowrap;
+}
+
+.button-header:hover .tooltip-container{
+  opacity: 1;
+}
+
+.link-title{
+  text-decoration: none;
+  color: black;
+}
+

@@ -1,0 +1,16 @@
+body{
+  margin: 0 0;
+  padding-top: 100px;
+  padding-left: 130px;
+  padding-right: 30px;
+  height: 2000000px;
+  background-color: rgb(250, 250, 250);
+}
+
+* {
+  font-family: roboto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
